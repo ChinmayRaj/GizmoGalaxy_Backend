@@ -55,9 +55,9 @@ int id=productRepo.findById(product.getId()).get().getId();
     }
 
     public void deleteProduct(int id) {
-if(id>0){
+
     productRepo.deleteById(id);
-}
+
     }
 
     public List<Product> searchProduct(String searchwords) throws Exception{
